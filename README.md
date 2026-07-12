@@ -81,9 +81,9 @@
 
 ## 지원 및 문의
 
-사용 중 문제가 발생하거나 개선 의견이 있다면 아래 GitHub Issues를 이용해 주세요.
+사용 중 문제가 발생하거나 개선 의견이 있다면 아래 지원 페이지를 이용해 주세요.
 
-- 문제 신고 및 기능 제안: [GitHub Issues](https://github.com/BIYONGHIYON/topout-app/issues)
+- 문제 신고 및 기능 제안: [지원 페이지](https://biyonghiyon.github.io/TopOut-app/)
 
 문제를 등록할 때 다음 정보를 함께 적어주면 확인에 도움이 됩니다.
 
