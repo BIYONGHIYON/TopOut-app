@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TopOut 고객 지원 및 문의 페이지" />
+  <title>TopOut 고객 지원</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f4f6f8;
+      --card: #ffffff;
+      --text: #1d2630;
+      --subtext: #5d6873;
+      --border: #d9dee3;
+      --accent: #1d2630;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #1d2630;
+        --card: #26313c;
+        --text: #f4f6f8;
+        --subtext: #bdc5cd;
+        --border: #3e4a56;
+        --accent: #f4f6f8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+        "Noto Sans KR", "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 36px;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--subtext);
+    }
+
+    section {
+      margin-bottom: 20px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--card);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 21px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: var(--background);
+      text-decoration: none;
+    }
+
+    footer {
+      padding-top: 12px;
+      color: var(--subtext);
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>TopOut 고객 지원</h1>
+      <p>클라이밍 영상 촬영과 자동 구간 감지를 위한 TopOut 지원 페이지입니다.</p>
+    </header>
+
+    <section>
+      <h2>TopOut 소개</h2>
+      <p>
+        TopOut은 실내 클라이밍 영상을 촬영하고, 사용자의 움직임과 자세를
+        분석하여 필요한 등반 구간을 자동으로 찾아주는 모바일 앱입니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>자주 묻는 질문</h2>
+
+      <h3>카메라 화면이 표시되지 않아요.</h3>
+      <p>
+        기기 설정에서 TopOut의 카메라 및 마이크 접근 권한이 허용되어 있는지
+        확인해 주세요.
+      </p>
+
+      <h3>등반 구간이 정확하게 감지되지 않아요.</h3>
+      <p>
+        스마트폰을 고정하고, 클라이머의 전신과 벽·매트 경계가 화면에 함께
+        보이도록 촬영해 주세요. 매트 경계선과 완등 홀드가 올바르게
+        지정되었는지도 확인해 주세요.
+      </p>
+
+      <h3>영상이 사진 앱에 저장되지 않아요.</h3>
+      <p>
+        기기 설정에서 TopOut의 사진 추가 권한이 허용되어 있는지 확인하고,
+        기기의 남은 저장 공간도 확인해 주세요.
+      </p>
+
+      <h3>촬영 영상이 서버로 전송되나요?</h3>
+      <p>
+        TopOut의 영상 및 자세 분석은 기기 내에서 처리되며, 촬영 영상은
+        개발자 서버로 전송되지 않습니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>문의하기</h2>
+      <p>
+        오류 제보나 기능 제안이 있다면 아래 방법으로 문의해 주세요.
+      </p>
+
+      <ul>
+        <li>
+          이메일:
+          <a href="byeonghyeon383@gmail.com">
+            byeonghyeon383@gmail.com
+          </a>
+        </li>
+        <li>
+          GitHub Issues:
+          <a
+            href="https://github.com/BIYONGHIYON/topout-app/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            오류 및 기능 제안 등록
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        문의 시 기기 모델, iOS 또는 Android 버전, 문제 발생 과정과
+        화면 캡처를 함께 보내주시면 확인에 도움이 됩니다.
+      </p>
+
+      <a
+        class="button"
+        href="https://github.com/BIYONGHIYON/topout-app/issues/new"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        문제 신고하기
+      </a>
+    </section>
+
+    <footer>
+      © 2026 TopOut. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
