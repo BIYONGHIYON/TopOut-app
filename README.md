@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/topout-logo.png" width="180" alt="TopOut app icon" />
+  <img width="1024" height="1024" alt="Default-logo" src="https://github.com/user-attachments/assets/f3f75e67-414c-4a6a-92f2-52b47f9badbd" />
 
   # TopOut
 
