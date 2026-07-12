@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="1024" height="1024" alt="Default-logo" src="https://github.com/user-attachments/assets/f3f75e67-414c-4a6a-92f2-52b47f9badbd" />
+  <img width="180" height="180" alt="Default-logo" src="https://github.com/user-attachments/assets/f3f75e67-414c-4a6a-92f2-52b47f9badbd" />
 
   # TopOut
 
