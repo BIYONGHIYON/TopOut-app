@@ -127,7 +127,7 @@ iOS · Android
 
 ## 출시 상태
 
-* **App Store:** 버전 1.2 출시 준비 중
+* **App Store:** [버전 1.2 출시](https://apps.apple.com/kr/app/topout/id6790163178)
 * **Google Play:** 버전 1.2 출시 준비 중
 
 스토어 등록이 완료되면 이 문서에 각 플랫폼의 다운로드 링크를 추가할 예정입니다.
