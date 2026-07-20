@@ -204,5 +204,5 @@ iOS · Android
 
 <div align="center">
   <strong>TopOut</strong><br />
-  등반 기록에 필요한 장면만 더 빠르게.
+  등반 시작부터 완등 순간까지.
 </div>
