@@ -7,7 +7,7 @@
 
 `iOS 출시 완료` · `Android 출시 완료`
 
-<sub>현재 버전: 1.5 · build 9</sub>
+<sub>현재 버전: 1.5 · build 10</sub>
 </div>
 
 ---
@@ -170,7 +170,7 @@ MobileSAM을 이용해 벽과 매트가 만나는 경계를 자동으로 찾습�
 - Vision Human Body Pose
 - Core ML MobileSAM
 - Photos · AVPlayer · AVAssetExportSession
-- 출시 완료 · v1.5 build 9
+- 출시 완료 · v1.5 build 10
 
 ### Android
 
@@ -182,7 +182,7 @@ MobileSAM을 이용해 벽과 매트가 만나는 경계를 자동으로 찾습�
 - AndroidX Media3 · MediaStore
 - Android 15 Edge-to-Edge UI 대응
 - 16KB 메모리 페이지 환경을 고려한 네이티브 런타임 구성
-- 출시 완료 · v1.5 versionCode 9
+- 출시 완료 · v1.5 versionCode 10
 
 기기별 카메라 하드웨어, 지원 포맷 및 자세 추론 결과에 따라 자동 감지 정확도에는 차이가 있을 수 있습니다.
 
@@ -258,9 +258,13 @@ MobileSAM을 이용해 벽과 매트가 만나는 경계를 자동으로 찾습�
 
 ## 현재 버전
 
-### v1.5 · build 9
+### v1.5 · build 10
 
 - iOS·Android 정식 출시 완료
+- Android에서 선택·녹화·저장 중 시스템 뒤로가기를 상태별로 안전하게 처리
+- 결과 영상과 갤러리 저장본은 앱이 백그라운드로 이동하면 자동 일시정지
+- iOS에서 전화·다른 앱의 오디오 점유가 끝난 뒤 다음 녹화의 마이크 입력을 자동 복구
+- iOS 세로 화면의 하단 촬영 컨트롤을 안전 영역 안으로 조정
 - 앱 실행 직후 Ready를 눌러도 안정된 새 카메라 프레임으로 매트 경계를 분석하도록 개선
 - 정지 캡처 화면 대신 라이브 프리뷰에서 매트 경계 보정과 탑홀드 선택
 - 탑홀드 선택 시마다 현재 카메라 프레임으로 마스크 갱신
