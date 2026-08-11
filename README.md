@@ -7,7 +7,7 @@
 
 `iOS 출시 완료` · `Android 출시 완료`
 
-<sub>현재 버전: iOS 1.5 build 10 · Android 1.5 versionCode 11</sub>
+<sub>현재 버전: iOS 1.5 build 11 · Android 1.5 versionCode 11</sub>
 
 [App Store](https://apps.apple.com/kr/app/topout/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
 </div>
@@ -177,7 +177,7 @@ MobileSAM을 이용해 벽과 매트가 만나는 경계를 자동으로 찾습�
 - Vision Human Body Pose
 - Core ML MobileSAM
 - Photos · AVPlayer · AVAssetExportSession
-- 출시 완료 · v1.5 build 10
+- 출시 완료 · v1.5 build 11
 
 ### Android
 
@@ -265,7 +265,7 @@ MobileSAM을 이용해 벽과 매트가 만나는 경계를 자동으로 찾습�
 
 ## 현재 버전
 
-### v1.5 · iOS build 10 / Android versionCode 11
+### v1.5 · iOS build 11 / Android versionCode 11
 
 - iOS·Android 정식 출시 완료
 - Android에서 선택·녹화·저장 중 시스템 뒤로가기를 상태별로 안전하게 처리
