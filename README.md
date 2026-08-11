@@ -7,7 +7,7 @@
 
 `iOS 출시 완료` · `Android 출시 완료`
 
-<sub>현재 버전: 1.5 · build 10</sub>
+<sub>현재 버전: iOS 1.5 build 10 · Android 1.5 versionCode 11</sub>
 
 [App Store](https://apps.apple.com/kr/app/topout/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
 </div>
@@ -189,7 +189,7 @@ MobileSAM을 이용해 벽과 매트가 만나는 경계를 자동으로 찾습�
 - AndroidX Media3 · MediaStore
 - Android 15 Edge-to-Edge UI 대응
 - 16KB 메모리 페이지 환경을 고려한 네이티브 런타임 구성
-- 출시 완료 · v1.5 versionCode 10
+- 출시 완료 · v1.5 versionCode 11
 
 기기별 카메라 하드웨어, 지원 포맷 및 자세 추론 결과에 따라 자동 감지 정확도에는 차이가 있을 수 있습니다.
 
@@ -265,12 +265,16 @@ MobileSAM을 이용해 벽과 매트가 만나는 경계를 자동으로 찾습�
 
 ## 현재 버전
 
-### v1.5 · build 10
+### v1.5 · iOS build 10 / Android versionCode 11
 
 - iOS·Android 정식 출시 완료
 - Android에서 선택·녹화·저장 중 시스템 뒤로가기를 상태별로 안전하게 처리
 - 결과 화면에서는 시스템 자동 잠금을 허용하고, 결과 영상과 갤러리 저장본은 앱이 백그라운드로 이동하면 자동 일시정지
 - iOS에서 전화·다른 앱의 오디오 점유가 끝난 뒤 다음 녹화의 마이크 입력을 자동 복구
+- iPhone 12 mini를 포함한 메모리 제약 기기에서 iOS 앱 시작 안정성 개선
+- iOS 저장 영상이 선택한 시작 시점의 첫 화면부터 자연스럽게 재생되도록 개선
+- Android 앱 시작이 AI 모델 준비를 기다리지 않도록 카메라 우선 진입으로 개선
+- Android 저장 영상이 일부 갤러리에서도 첫 영상 프레임부터 자연스럽게 재생되도록 개선
 - iOS 세로 화면의 하단 촬영 컨트롤을 안전 영역 안으로 조정
 - 앱 실행 직후 Ready를 눌러도 안정된 새 카메라 프레임으로 매트 경계를 분석하도록 개선
 - 정지 캡처 화면 대신 라이브 프리뷰에서 매트 경계 보정과 탑홀드 선택
