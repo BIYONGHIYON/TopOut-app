@@ -7,7 +7,7 @@
 
 `iOS 출시 완료` · `Android 출시 완료`
 
-<sub>현재 프로젝트 버전: iOS 1.6 build 12 · Android 1.6 versionCode 12</sub>
+<sub>현재 프로젝트 버전: iOS 1.6 build 13 · Android 1.6 versionCode 13</sub>
 
 [App Store](https://apps.apple.com/kr/app/topout/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
 </div>
@@ -130,7 +130,7 @@ TopOut은 현재 **iOS와 Android 모두 출시 완료** 상태이며, 두 플�
 - Vision Human Body Pose
 - Core ML MobileSAM
 - Photos · AVPlayer · AVAssetExportSession
-- 스토어 출시 완료 · 현재 프로젝트 v1.6 build 12
+- 스토어 출시 완료 · 현재 프로젝트 v1.6 build 13
 
 ### Android
 
@@ -142,7 +142,7 @@ TopOut은 현재 **iOS와 Android 모두 출시 완료** 상태이며, 두 플�
 - AndroidX Media3 · MediaStore
 - Android 15 Edge-to-Edge UI 대응
 - 16KB 메모리 페이지 환경을 고려한 네이티브 런타임 구성
-- 스토어 출시 완료 · 현재 프로젝트 v1.6 versionCode 12
+- 스토어 출시 완료 · 현재 프로젝트 v1.6 versionCode 13
 
 기기별 카메라 하드웨어, 지원 포맷 및 자세 추론 결과에 따라 자동 감지 정확도에는 차이가 있을 수 있습니다.
 
@@ -213,7 +213,7 @@ TopOut은 현재 **iOS와 Android 모두 출시 완료** 상태이며, 두 플�
 
 ## 현재 버전
 
-### v1.6 · iOS build 12 / Android versionCode 12
+### v1.6 · iOS build 13 / Android versionCode 13
 
 - iOS·Android 정식 출시 완료
 - 매트 경계 분석이 5초 안에 끝나지 않으면 기본 경계와 수동 보정 화면으로 전환
@@ -227,6 +227,8 @@ TopOut은 현재 **iOS와 Android 모두 출시 완료** 상태이며, 두 플�
 - iOS에서 전화·다른 앱의 오디오 점유가 끝난 뒤 다음 녹화의 마이크 입력을 자동 복구
 - iPhone 12 mini를 포함한 메모리 제약 기기에서 iOS 앱 시작 안정성 개선
 - 두 플랫폼의 온디바이스 분석 중간 메모리와 장시간 녹화 버퍼 수명을 정리해 저사양 기기 안정성 보강
+- iOS·Android의 등반 시작 판정 여백을 통일해 플랫폼 간 감지 결과 일관성 개선
+- iOS 다중 인물 환경에서 움직임 위치를 기준으로 주 등반자를 선택하고 안정적으로 이어서 추적
 - iOS 저장 영상이 선택한 시작 시점의 첫 화면부터 자연스럽게 재생되도록 개선
 - Android 앱 시작이 AI 모델 준비를 기다리지 않도록 카메라 우선 진입으로 개선
 - Android 저장 영상이 일부 갤러리에서도 첫 영상 프레임부터 자연스럽게 재생되도록 개선
