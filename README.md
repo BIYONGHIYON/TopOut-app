@@ -7,7 +7,7 @@
 
 `iOS 출시 완료` · `Android 출시 완료`
 
-<sub>현재 프로젝트 버전: iOS 1.6 build 14 · Android 1.6 versionCode 14</sub>
+<sub>현재 프로젝트 버전: iOS 2.0 build 16 · Android 2.0 versionCode 16</sub>
 
 [App Store](https://apps.apple.com/kr/app/topout/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
 </div>
@@ -36,6 +36,15 @@ TopOut은 현재 **iOS와 Android 모두 출시 완료** 상태이며, 두 플�
 - 자동으로 찾은 구간을 간편하게 미세 조정
 - 원하는 등반 장면만 사진 앱 또는 갤러리에 저장
 - 촬영 중단과 저장공간 부족 상황에 안전하게 대응
+- 기기 언어 자동 선택과 앱 내 수동 언어 변경
+
+### 9개 언어 지원
+
+TopOut은 영어, 한국어, 일본어, 중국어 간체, 중국어 번체, 프랑스어, 독일어, 스페인어, 포르투갈어를 지원합니다. 기본 `자동` 설정은 기기의 선호 언어를 따르며, 앱 설정에서 원하는 언어를 고르면 저장 전에도 설정 화면에 즉시 미리보기됩니다. 지원하지 않는 기기 언어는 영어로 표시됩니다. 긴 번역도 버튼 밖으로 나가거나 말줄임표로 생략되지 않도록 레이아웃을 조정했습니다.
+
+촬영·선택·결과 화면의 긴 상단 안내는 최대 두 줄로 표시하고, 가로모드 컨트롤도 화면 안전 영역 안에 배치합니다.
+
+Android 촬영 화면의 Tip 안내는 최대 두 줄 가운데 정렬과 자동 글자 크기 조정을 적용해 프랑스어·독일어처럼 긴 문장도 잘리지 않게 표시합니다.
 
 ### 매트 경계 자동 탐지 및 직접 보정
 
@@ -130,7 +139,7 @@ TopOut은 현재 **iOS와 Android 모두 출시 완료** 상태이며, 두 플�
 - Vision Human Body Pose
 - Core ML MobileSAM
 - Photos · AVPlayer · AVAssetExportSession
-- 스토어 출시 완료 · 현재 프로젝트 v1.6 build 14
+- 스토어 출시 완료 · 현재 프로젝트 v2.0 build 16
 
 ### Android
 
@@ -142,7 +151,7 @@ TopOut은 현재 **iOS와 Android 모두 출시 완료** 상태이며, 두 플�
 - AndroidX Media3 · MediaStore
 - Android 15 Edge-to-Edge UI 대응
 - 16KB 메모리 페이지 환경을 고려한 네이티브 런타임 구성
-- 스토어 출시 완료 · 현재 프로젝트 v1.6 versionCode 14
+- 스토어 출시 완료 · 현재 프로젝트 v2.0 versionCode 16
 
 기기별 카메라 하드웨어, 지원 포맷 및 자세 추론 결과에 따라 자동 감지 정확도에는 차이가 있을 수 있습니다.
 
@@ -227,9 +236,10 @@ TopOut은 iOS 카메라 프로토타입에서 시작해 Android까지 같은 촬
 
 ## 현재 버전
 
-### v1.6 · iOS build 14 / Android versionCode 14
+### v2.0 · iOS build 16 / Android versionCode 16
 
 - iOS·Android 정식 출시 완료
+- 영어·한국어·일본어·중국어 간체·번체·프랑스어·독일어·스페인어·포르투갈어 UI와 자동·수동 언어 선택 지원
 - 매트 경계 분석이 5초 안에 끝나지 않으면 기본 경계와 수동 보정 화면으로 전환
 - 시작점 수정 후 해당 위치부터, 종료점 수정 후 3초 전부터 자동 재생해 편집 결과 확인 개선
 - iOS·Android 선택 구간 확대 슬라이더의 전체 트랙 터치와 즉시 드래그 지원
