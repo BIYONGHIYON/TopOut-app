@@ -3,111 +3,78 @@
 
 # TopOut
 
-**등반 시작부터 완등 순간까지, 자동으로 찾아주는 클라이밍 촬영 앱**
+**등반 시작부터 완등 순간까지, 자동으로 찾아주는 클라이밍 촬영 앱**<br>
+**From the start of your climb to the send—automatically.**
 
-`iOS 출시 완료` · `Android 출시 완료`
+`iOS 출시 완료 · Available on iOS` · `Android 출시 완료 · Available on Android`
 
-<sub>현재 프로젝트 버전: iOS 2.0 build 16 · Android 2.0 versionCode 16</sub>
+<sub>iOS 2.0 build 16 · Android 2.0 versionCode 16</sub>
 
-[App Store](https://apps.apple.com/kr/app/topout/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
+[App Store](https://apps.apple.com/app/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
+
+[한국어](#한국어) · [English](#english)
 </div>
 
 ---
 
-## 소개
+<a id="한국어"></a>
+
+## 한국어
+
+### 소개
 
 **TopOut**은 실내 클라이머를 위한 스마트 등반 영상 녹화 앱입니다.
 
-TopOut이 사용자의 움직임을 분석해 등반 시작부터 완등 순간까지 필요한 구간을 자동으로 찾아줍니다.
+사용자의 움직임을 기기 안에서 분석해 등반 시작부터 완등 순간까지 필요한 구간을 자동으로 찾아줍니다. 한 번의 영상에 여러 번의 등반이 담겨 있어도 각각의 시도를 구분합니다.
 
-한 번의 영상에 여러 번의 등반이 담겨 있어도 각각의 시도를 구분합니다. 촬영이 끝나면 자동으로 선택된 구간을 확인하고, 시작점과 종료점을 원하는 위치로 세밀하게 조정한 뒤 필요한 장면만 사진 앱 또는 갤러리에 저장할 수 있습니다.
+촬영이 끝나면 자동으로 선택된 구간을 확인하고 시작점과 종료점을 세밀하게 조정한 뒤, 원하는 등반 장면만 사진 앱 또는 갤러리에 저장할 수 있습니다. 긴 영상을 다시 돌려보며 장면을 찾고 편집하는 시간을 줄이고 클라이밍에 더 집중해 보세요.
 
-모든 영상 분석은 사용자의 기기 안에서 이루어집니다. 긴 영상을 다시 돌려보며 등반 장면을 찾고 편집하는 시간을 줄이고, 클라이밍에 더 집중해 보세요.
-
-TopOut은 현재 **iOS와 Android 모두 출시 완료** 상태이며, 두 플랫폼에서 같은 핵심 촬영·분석·편집 흐름을 제공합니다.
-
----
-
-## 주요 기능
+### 주요 기능
 
 - 매트 경계 자동 탐지 및 직접 보정
-- 움직임을 분석해 등반 시작과 종료 시점 감지
+- 움직임과 자세를 분석해 등반 시작·종료 시점 감지
 - 한 번의 촬영에서 여러 등반 시도 자동 구분
-- 자동으로 찾은 구간을 간편하게 미세 조정
+- 자동으로 찾은 구간의 시작점·종료점 정밀 조정
+- 타임라인 확대와 수정 구간 자동 미리보기
 - 원하는 등반 장면만 사진 앱 또는 갤러리에 저장
-- 촬영 중단과 저장공간 부족 상황에 안전하게 대응
-- 기기 언어 자동 선택과 앱 내 수동 언어 변경
+- 저장된 실제 영상을 TopOut 안에서 다시 열어 확인
+- 녹화 중단과 저장공간 부족 상황에 안전하게 대응
+- 장시간 촬영을 위한 실시간 화면 끄기
 
 ### 9개 언어 지원
 
-TopOut은 영어, 한국어, 일본어, 중국어 간체, 중국어 번체, 프랑스어, 독일어, 스페인어, 포르투갈어를 지원합니다. 기본 `자동` 설정은 기기의 선호 언어를 따르며, 앱 설정에서 원하는 언어를 고르면 저장 전에도 설정 화면에 즉시 미리보기됩니다. 지원하지 않는 기기 언어는 영어로 표시됩니다. 긴 번역도 버튼 밖으로 나가거나 말줄임표로 생략되지 않도록 레이아웃을 조정했습니다.
+TopOut 2.0부터 다음 언어를 지원합니다.
 
-촬영·선택·결과 화면의 긴 상단 안내는 최대 두 줄로 표시하고, 가로모드 컨트롤도 화면 안전 영역 안에 배치합니다.
+- English
+- 한국어
+- 日本語
+- 简体中文
+- 繁體中文
+- Français
+- Deutsch
+- Español
+- Português
 
-Android 촬영 화면의 Tip 안내는 최대 두 줄 가운데 정렬과 자동 글자 크기 조정을 적용해 프랑스어·독일어처럼 긴 문장도 잘리지 않게 표시합니다.
+기본값인 `자동`은 기기의 선호 언어를 따르며, 지원하지 않는 언어에서는 영어를 사용합니다. 설정에서 원하는 언어를 직접 선택할 수도 있습니다.
 
-### 매트 경계 자동 탐지 및 직접 보정
+긴 번역도 버튼 밖으로 나가거나 말줄임표로 숨지 않도록 화면을 조정했습니다. Android 촬영 화면의 Tip은 화면 너비에 맞춰 글자 크기를 조절해 한 줄로 표시하며, 촬영·선택·결과 화면의 긴 상태 문구는 필요한 경우 최대 두 줄로 표시합니다.
 
-촬영을 준비하면 벽과 매트가 만나는 경계를 자동으로 찾습니다. 실제 환경과 다르게 표시된 부분은 화면에서 직접 조정할 수 있으며, 분석이 오래 걸리거나 경계를 찾지 못해도 기본 경계에서 바로 보정해 촬영을 계속할 수 있습니다.
-
-### 움직임 기반 등반 구간 감지
-
-촬영 중 사용자의 움직임을 분석해 등반 시작과 종료 시점을 찾습니다. 자동 감지 결과는 편집을 시작하기 위한 구간으로 제안되며, 사용자가 결과 화면에서 직접 확인하고 수정할 수 있습니다.
-
-### 여러 등반 시도 자동 구분
-
-완등 순간이 감지되어도 녹화는 계속됩니다. 한 번의 긴 영상에 여러 번의 등반이 담겨 있으면 각각의 시도를 별도 구간으로 정리해 보여줍니다.
-
-### 자동 구간 선택 및 직접 조정
-
-촬영이 끝나면 감지된 등반 구간을 자동으로 제안합니다. 시작점과 종료점을 원하는 위치로 세밀하게 조정하고 미리보기로 바로 확인할 수 있습니다.
-
-- 여러 등반 시도 간 간편한 이동
-- 시작점·종료점 직접 조정
-- 구간 수정 후 자동 미리보기
-- 타임라인 확대를 이용한 세밀한 편집
-- 선택한 구간만 저장
-
-### 원하는 구간만 갤러리에 저장
-
-편집한 구간만 사진 앱 또는 갤러리에 저장합니다. 저장이 끝난 영상은 TopOut 안에서 바로 열어 실제 결과를 확인할 수 있습니다.
-
-### 장시간 촬영을 위한 화면 절전
-
-기본 설정에서는 녹화 중 실시간 화면을 끄고 촬영과 분석을 계속합니다. 앵글을 확인해야 할 때는 촬영 중에도 화면을 다시 켤 수 있습니다.
-
-### 안전한 녹화 종료
-
-앱이 백그라운드로 이동하거나 다른 앱의 카메라·마이크 사용, 카메라 오류, 저장공간 부족이 발생하면 현재까지 촬영된 영상을 보호할 수 있도록 녹화를 안전하게 마무리합니다.
-
-### 기기 내 영상 분석
-
-움직임 감지, 자세 추정과 매트 경계 탐지는 사용자의 기기 안에서 처리합니다. 촬영 영상과 분석용 이미지 프레임은 TopOut 개발자 서버로 전송하지 않습니다.
-
-### 자연스러운 멀티 렌즈 줌 (Android)
-
-지원되는 Android 기기에서는 여러 후면 카메라를 핀치 줌으로 자연스럽게 전환합니다. 사용할 수 있는 배율과 전환 방식은 기기의 카메라 구성에 따라 달라질 수 있습니다.
-
----
-
-## 작동 흐름
+### 사용 흐름
 
 ```text
-촬영 옵션 설정
-→ 구도 및 매트 경계 확인
+촬영 옵션과 구도 설정
+→ 매트 경계 자동 탐지 및 직접 보정
 → 연속 녹화 시작
-→ 매트 위쪽 움직임 탐색
-→ 기기 내 움직임 분석
-→ 등반 시작과 종료 시점 감지
-→ 여러 등반 구간 제안
+→ 기기 내 움직임·자세 분석
+→ 여러 등반 구간 자동 제안
 → 시작점·종료점 정밀 조정
-→ 사진 또는 동영상 보관함에 저장
-→ 실제 갤러리 저장본 재조회 및 앱 내 확인
+→ 원하는 구간만 사진 앱 또는 갤러리에 저장
+→ 실제 저장 영상을 TopOut 안에서 확인
 ```
 
----
+자동 탐지는 편집을 시작하기 위한 구간을 제안합니다. 감지된 결과는 결과 화면에서 언제든지 직접 확인하고 수정할 수 있으며, 완등이 감지되어도 녹화는 사용자가 종료할 때까지 계속됩니다.
 
-## 기본 촬영 설정
+### 기본 촬영 설정
 
 | 항목 | 기본값 |
 |---|---|
@@ -119,159 +86,195 @@ Android 촬영 화면의 Tip 안내는 최대 두 줄 가운데 정렬과 자동
 | 도움말 | ON |
 | 녹화 중 실시간 화면 | OFF |
 
-지원 후보:
+지원 후보는 FHD·4K, 30fps·60fps, 9:16·4:5·3:4·1:1과 세로·가로 촬영입니다. 실제 선택 가능한 조합은 기기의 카메라 성능에 따라 달라질 수 있습니다.
 
-- 해상도: FHD, 4K
-- 프레임률: 30fps, 60fps
-- 화면 비율: 9:16, 4:5, 3:4, 1:1
-- 세로·가로 촬영
+### 플랫폼 및 호환성
 
-실제 선택 가능한 해상도와 프레임 조합은 기기의 후면 카메라 성능에 따라 달라질 수 있습니다.
-
----
-
-## 플랫폼 및 호환성
-
-### iOS
+#### iOS
 
 - iOS 16.0 이상
 - Swift · UIKit · AVFoundation
-- Vision Human Body Pose
-- Core ML MobileSAM
-- Photos · AVPlayer · AVAssetExportSession
-- 스토어 출시 완료 · 현재 프로젝트 v2.0 build 16
+- Apple Vision · Core ML MobileSAM
+- 현재 버전: 2.0 build 16
 
-### Android
+#### Android
 
 - Android 8.0(API 26) 이상
-- Target SDK 36
 - Kotlin · Jetpack Compose · CameraX
-- MoveNet SinglePose Thunder FP16 · LiteRT
-- ONNX Runtime MobileSAM
-- AndroidX Media3 · MediaStore
-- Android 15 Edge-to-Edge UI 대응
-- 16KB 메모리 페이지 환경을 고려한 네이티브 런타임 구성
-- 스토어 출시 완료 · 현재 프로젝트 v2.0 versionCode 16
+- MoveNet Thunder · LiteRT · ONNX Runtime MobileSAM
+- 현재 버전: 2.0 versionCode 16
 
-기기별 카메라 하드웨어, 지원 포맷 및 자세 추론 결과에 따라 자동 감지 정확도에는 차이가 있을 수 있습니다.
+기기별 카메라 하드웨어, 지원 포맷, 촬영 환경과 자세 인식 결과에 따라 자동 감지 정확도에는 차이가 있을 수 있습니다.
 
----
+### 개인정보 및 영상 처리
 
-## 개인정보 및 영상 처리
-
-- TopOut은 회원가입 없이 사용할 수 있습니다.
+- 회원가입 없이 사용할 수 있습니다.
 - 이름, 이메일 주소, 위치정보를 앱 기능 수행 목적으로 수집하지 않습니다.
-- 촬영한 원본 영상과 분석용 이미지 프레임을 TopOut 개발자 서버로 업로드하지 않습니다.
+- 촬영한 영상과 분석용 이미지 프레임을 TopOut 개발자 서버로 업로드하지 않습니다.
 - 움직임 감지, 자세 추정과 매트 경계 탐지는 사용자의 기기 안에서 수행됩니다.
-- 사용자가 저장을 선택한 결과 영상만 기기의 사진 또는 동영상 보관함으로 내보냅니다.
+- 사용자가 저장을 선택한 결과 영상만 기기의 사진 앱 또는 갤러리로 내보냅니다.
 
-자세한 내용은 개인정보 처리방침에서 확인할 수 있습니다.
+[TopOut 개인정보 처리방침](https://topoutprivacy.vercel.app/?lang=ko)
 
-[TopOut 개인정보 처리방침](https://topoutprivacy.vercel.app/)
+### 지원 및 문의
 
----
+문제 신고나 기능 제안에는 기기 모델, 운영체제 버전, TopOut 버전, 재현 순서와 화면 캡처를 함께 적어 주세요.
 
-## 지원 및 문의
+- [TopOut 고객지원](https://biyonghiyon.github.io/TopOut-app/?lang=ko)
+- [GitHub Issues](https://github.com/BIYONGHIYON/TopOut-app/issues)
+- 이메일: [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
 
-사용 중 문제가 발생하거나 개선 의견이 있다면 아래 지원 페이지를 이용해 주세요.
+### TopOut 2.0
 
-- [문제 신고 및 기능 제안](https://biyonghiyon.github.io/TopOut-app/)
+- 앱 UI를 9개 언어로 제공하고 자동·수동 언어 선택 지원
+- 매트 분석이 5초 안에 끝나지 않으면 기본 경계와 직접 보정 화면으로 복구
+- 여러 등반 시도 자동 구분과 결과 구간 편집 흐름 개선
+- 시작점 수정 후 해당 위치부터, 종료점 수정 후 3초 전부터 자동 미리보기
+- 선택 구간 확대 슬라이더의 전체 트랙 터치와 즉시 드래그 지원
+- 실제 Photos·MediaStore 저장 항목을 다시 열어 저장 결과 확인
+- 저사양 기기의 앱 시작, 메모리와 장시간 녹화 안정성 개선
+- 화면 가장자리의 잘린 자세를 새 등반으로 잘못 인식하는 경우 완화
+- Android 멀티 렌즈 줌과 다양한 카메라 구성 대응 강화
+- iOS·Android의 긴 다국어 문구와 가로·세로 UI 대응 보강
 
-문제를 등록할 때 다음 정보를 함께 적어주면 확인에 도움이 됩니다.
+### 저장소 안내
 
-- 사용 기기 모델
-- 운영체제 및 버전
-- TopOut 앱 버전
-- 문제가 발생한 화면
-- 문제 재현 순서
-- 오류 화면 또는 로그 스크린샷
+이 저장소는 TopOut의 공개 소개, 고객지원, 개인정보 처리방침과 업데이트 안내를 위한 저장소입니다. App Store 및 Google Play 배포용 앱 소스와 내부 탐지 파라미터는 별도의 비공개 저장소에서 관리합니다.
 
-개인정보 처리 및 기타 문의:
-
-- **개발자·운영자:** 이병현 (BIYONGHIYON)
-- **이메일:** [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
-
----
-
-## 저장소 안내
-
-이 저장소는 TopOut의 **공개 소개, 지원, 개인정보 처리방침 및 업데이트 안내**를 위한 저장소입니다.
-
-실제 App Store 및 Google Play 배포용 애플리케이션 소스와 내부 탐지 파라미터는 별도의 비공개 저장소에서 관리합니다.
+[맨 위로](#topout)
 
 ---
 
-## 개발 방향
+<a id="english"></a>
 
-TopOut은 iOS 카메라 프로토타입에서 시작해 Android까지 같은 촬영·분석·편집 경험을 제공하는 제품으로 발전했습니다. 자동 분석의 정확도만 높이는 것보다 장시간 촬영 중의 전력과 메모리, 기기별 카메라 차이, 저장 결과 확인과 실패 후 복구까지 실제 사용 흐름 전체를 함께 개선하고 있습니다.
+## English
 
-- 자동 분석은 사용자의 결정을 대신하는 결과가 아니라 빠르게 확인하고 수정할 수 있는 편집 시작점으로 제공합니다.
-- 분석이 지연되거나 실패해도 기본 경계와 직접 보정을 이용해 촬영을 계속할 수 있게 설계합니다.
-- 저장 완료는 내보내기 API 응답만으로 판단하지 않고 사진 앱·갤러리에 생성된 실제 영상을 다시 열어 확인합니다.
-- 출시 후 전달받은 사용자 피드백을 저사양 기기 복구, 저장본 확인, 재촬영과 구간 편집 흐름의 개선으로 연결합니다.
-- 영상과 분석용 프레임은 외부 분석 서버로 전송하지 않고 기기 안에서 처리합니다.
+### About TopOut
 
-내부 모델 실험, 탐지 상수와 플랫폼별 상태 전이처럼 배포 앱 구현에 관한 상세 내용은 비공개 저장소에서 관리합니다.
+**TopOut** is a smart climbing video recorder built for indoor climbers.
 
----
+It analyzes movement on your device and automatically finds the useful part of each attempt—from the start of your climb to the send. If one recording contains multiple attempts, TopOut separates them into individual clips.
 
-## 기술 구성
+After recording, review the suggested clips, fine-tune their start and end points, and save only the moments you want to Photos or your gallery. Spend less time searching through long videos and more time climbing.
 
-### Computer Vision
+### Key Features
 
-- On-device Mat Boundary Detection
-- Motion Detection
-- Human Body Pose Estimation
+- Automatic mat boundary detection with manual correction
+- On-device movement and pose analysis for climb start and end detection
+- Automatic separation of multiple attempts in one recording
+- Precise start and end point adjustment
+- Timeline zoom and automatic preview after trim changes
+- Save only selected climbing clips to Photos or your gallery
+- Open the actual saved video again inside TopOut
+- Safe recording finalization during interruptions or low-storage conditions
+- Optional live-preview shutdown for long recording sessions
 
-### Video
+### Available in 9 Languages
 
-- Continuous Video Recording
-- Multiple Climb Attempt Detection
-- Automatic Segment Selection
-- Precision Trimming
-- Gallery Export and Playback
-- Background and Low-Storage Safe Finalization
+Starting with TopOut 2.0, the app supports:
 
----
+- English
+- 한국어
+- 日本語
+- 简体中文
+- 繁體中文
+- Français
+- Deutsch
+- Español
+- Português
 
-## 현재 버전
+The default `Automatic` option follows your device’s preferred language and falls back to English when the language is not supported. You can also choose a language manually in Settings.
 
-### v2.0 · iOS build 16 / Android versionCode 16
+Layouts are designed so longer translations remain visible instead of overflowing or being replaced with ellipses. On Android, the camera Tip scales to remain on one line. Longer status messages on the camera, selection, and review screens can use up to two lines when needed.
 
-- iOS·Android 정식 출시 완료
-- 영어·한국어·일본어·중국어 간체·번체·프랑스어·독일어·스페인어·포르투갈어 UI와 자동·수동 언어 선택 지원
-- 매트 경계 분석이 5초 안에 끝나지 않으면 기본 경계와 수동 보정 화면으로 전환
-- 시작점 수정 후 해당 위치부터, 종료점 수정 후 3초 전부터 자동 재생해 편집 결과 확인 개선
-- iOS·Android 선택 구간 확대 슬라이더의 전체 트랙 터치와 즉시 드래그 지원
-- 선택 구간 확대 슬라이더의 불필요한 조작 종료 진동 제거
-- 다시 촬영 경고 본문과 확인 버튼의 시각적 위계 개선
-- 두 플랫폼의 매트 보정·안전 종료·저장 진행 문구 통일
-- Android에서 선택·녹화·저장 중 시스템 뒤로가기를 상태별로 안전하게 처리
-- 결과 화면에서는 시스템 자동 잠금을 허용하고, 결과 영상과 갤러리 저장본은 앱이 백그라운드로 이동하면 자동 일시정지
-- iOS에서 전화·다른 앱의 오디오 점유가 끝난 뒤 다음 녹화의 마이크 입력을 자동 복구
-- iPhone 12 mini를 포함한 메모리 제약 기기에서 iOS 앱 시작 안정성 개선
-- 두 플랫폼의 온디바이스 분석 중간 메모리와 장시간 녹화 버퍼 수명을 정리해 저사양 기기 안정성 보강
-- 선택한 영상 비율의 실제 촬영 영역을 기준으로 iOS·Android의 등반 시작·종료 감지 기준을 통일
-- 화면 가장자리에서 몸통·하체가 잘린 자세를 새 등반으로 잘못 인식하는 경우 완화
-- Android Pose 분석 영역을 동작에 맞게 확장해 가까운 클라이머의 추적 안정성 개선
-- 카운트다운 취소·앱 전환 뒤 오래된 카메라 요청이 녹화를 뒤늦게 시작하지 않도록 두 플랫폼 촬영 안정성 보강
-- 녹화 전 불필요한 프레임 전달과 반복 분석 연산을 줄여 장시간 촬영의 메모리·전력 사용 최적화
-- iOS 다중 인물 환경에서 움직임 위치를 기준으로 주 등반자를 선택하고 안정적으로 이어서 추적
-- iOS 저장 영상이 선택한 시작 시점의 첫 화면부터 자연스럽게 재생되도록 개선
-- Android 앱 시작이 AI 모델 준비를 기다리지 않도록 카메라 우선 진입으로 개선
-- Android 저장 영상이 일부 갤러리에서도 첫 영상 프레임부터 자연스럽게 재생되도록 개선
-- iOS 세로 화면의 하단 촬영 컨트롤을 안전 영역 안으로 조정
-- 앱 실행 직후 Ready를 눌러도 안정된 새 카메라 프레임으로 매트 경계를 분석하도록 개선
-- 정지 캡처 화면 대신 라이브 프리뷰에서 매트 경계 보정
-- 실제 Photos·MediaStore 저장 항목을 재조회·검증하고 앱 안에서 재생
-- 여러 클립의 저장 상태를 구간별로 분리
-- Android 저장 영상 보기의 앞/뒤 이동을 5초로 통일하고 슬라이더 실시간 탐색 지원
-- Android 기기별 카메라 구성에 맞춘 멀티 렌즈 줌 전환 개선
-- Android Fold·대화면·0.5x 렌즈·60fps 촬영·Android 9 이하 저장 권한 대응 강화
+### How It Works
+
+```text
+Choose recording options and frame your wall
+→ Detect or manually correct the mat boundary
+→ Start continuous recording
+→ Analyze movement and pose on the device
+→ Suggest clips for multiple climbing attempts
+→ Fine-tune each start and end point
+→ Save only the clips you want to Photos or your gallery
+→ Open the actual saved video again in TopOut
+```
+
+Automatic detection provides a starting point for editing. You can always review and adjust the suggested clips. Recording continues after a send is detected and stops only when you choose to finish.
+
+### Default Recording Settings
+
+| Setting | Default |
+|---|---|
+| Resolution | FHD |
+| Frame rate | 60fps |
+| Aspect ratio | 9:16 |
+| Automatic clip detection | ON |
+| Top-hold masking | OFF |
+| Help | ON |
+| Live preview while recording | OFF |
+
+Potential options include FHD or 4K, 30fps or 60fps, 9:16·4:5·3:4·1:1, and portrait or landscape recording. Available combinations depend on the device’s rear-camera capabilities.
+
+### Platforms and Compatibility
+
+#### iOS
+
+- iOS 16.0 or later
+- Swift · UIKit · AVFoundation
+- Apple Vision · Core ML MobileSAM
+- Current version: 2.0 build 16
+
+#### Android
+
+- Android 8.0(API 26) or later
+- Kotlin · Jetpack Compose · CameraX
+- MoveNet Thunder · LiteRT · ONNX Runtime MobileSAM
+- Current version: 2.0 versionCode 16
+
+Detection accuracy may vary with camera hardware, supported formats, filming conditions, and pose-estimation results.
+
+### Privacy and Video Processing
+
+- No account or sign-up is required.
+- TopOut does not collect your name, email address, or location to provide app features.
+- Recorded videos and analysis frames are not uploaded to a TopOut developer server.
+- Movement detection, pose estimation, and mat boundary detection run on your device.
+- Only the clips you choose to save are exported to Photos or your gallery.
+
+[TopOut Privacy Policy](https://topoutprivacy.vercel.app/?lang=en)
+
+### Support and Contact
+
+When reporting a problem, please include your device model, operating-system version, TopOut version, reproduction steps, and a screenshot when possible.
+
+- [TopOut Support](https://biyonghiyon.github.io/TopOut-app/?lang=en)
+- [GitHub Issues](https://github.com/BIYONGHIYON/TopOut-app/issues)
+- Email: [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
+
+### TopOut 2.0
+
+- Added a 9-language interface with automatic and manual language selection
+- Added a five-second mat-analysis fallback with immediate manual correction
+- Improved multi-attempt detection and review editing
+- Added automatic preview from the new start point or three seconds before the new end point
+- Enabled full-track touch and immediate dragging on the timeline zoom slider
+- Reopens the actual Photos or MediaStore item to verify saved videos
+- Improved startup, memory use, and long-recording stability on constrained devices
+- Reduced false climb starts caused by partial poses near screen edges
+- Improved Android multi-lens zoom and support for varied camera configurations
+- Improved long translated labels and portrait·landscape layouts on both platforms
+
+### Repository
+
+This repository contains TopOut’s public product introduction, support information, privacy policy, and release updates. The App Store and Google Play application source and internal detection parameters are maintained in a separate private repository.
+
+[Back to top](#topout)
 
 ---
 
 <div align="center">
   <strong>TopOut</strong><br />
-  등반 시작부터 완등 순간까지, 자동으로 찾아주는 클라이밍 촬영 앱
+  등반 시작부터 완등 순간까지, 자동으로 찾아주는 클라이밍 촬영 앱<br />
+  From the start of your climb to the send—automatically.
 </div>

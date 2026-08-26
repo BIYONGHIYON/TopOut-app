@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TopOut 고객 지원 및 문의 페이지" />
-  <title>TopOut 고객 지원</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TopOut 고객지원 및 문의 페이지입니다.">
+  <title>TopOut 고객지원</title>
 
   <style>
     :root {
@@ -15,6 +15,7 @@
       --subtext: #5d6873;
       --border: #d9dee3;
       --accent: #1d2630;
+      --accent-text: #ffffff;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -25,6 +26,7 @@
         --subtext: #bdc5cd;
         --border: #3e4a56;
         --accent: #f4f6f8;
+        --accent-text: #1d2630;
       }
     }
 
@@ -32,9 +34,13 @@
       box-sizing: border-box;
     }
 
+    [hidden] {
+      display: none !important;
+    }
+
     body {
       margin: 0;
-      padding: 40px 20px;
+      padding: 28px 20px 40px;
       background: var(--background);
       color: var(--text);
       font-family:
@@ -49,6 +55,38 @@
       margin: 0 auto;
     }
 
+    .language-switcher {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .language-switcher button {
+      min-width: 76px;
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--card);
+      color: var(--text);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .language-switcher button[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: var(--accent-text);
+    }
+
+    .language-switcher button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid #438bf0;
+      outline-offset: 3px;
+    }
+
     header {
       margin-bottom: 32px;
       text-align: center;
@@ -56,7 +94,8 @@
 
     h1 {
       margin: 0 0 8px;
-      font-size: 36px;
+      font-size: clamp(30px, 7vw, 36px);
+      line-height: 1.25;
     }
 
     header p {
@@ -73,8 +112,22 @@
     }
 
     h2 {
-      margin-top: 0;
+      margin: 0 0 14px;
       font-size: 21px;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 17px;
+    }
+
+    h3:first-of-type {
+      margin-top: 0;
+    }
+
+    p:last-child,
+    ul:last-child {
+      margin-bottom: 0;
     }
 
     ul {
@@ -83,7 +136,8 @@
 
     a {
       color: var(--accent);
-      font-weight: 600;
+      font-weight: 650;
+      overflow-wrap: anywhere;
     }
 
     .button {
@@ -92,7 +146,7 @@
       padding: 12px 18px;
       border-radius: 12px;
       background: var(--accent);
-      color: var(--background);
+      color: var(--accent-text);
       text-decoration: none;
     }
 
@@ -102,132 +156,284 @@
       text-align: center;
       font-size: 14px;
     }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 20px 14px 32px;
+      }
+
+      section {
+        padding: 20px;
+        border-radius: 15px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <main>
-    <header>
-      <h1>TopOut 고객 지원</h1>
-      <p>클라이밍 영상 촬영과 자동 구간 감지를 위한 TopOut 지원 페이지입니다.</p>
-    </header>
+    <nav class="language-switcher" aria-label="언어 선택 · Language selection">
+      <button type="button" data-language-button="ko" aria-pressed="true">한국어</button>
+      <button type="button" data-language-button="en" aria-pressed="false">English</button>
+    </nav>
 
-    <section>
-      <h2>TopOut 소개</h2>
-      <p>
-        TopOut은 실내 클라이밍 영상을 촬영하고, 사용자의 움직임과 자세를
-        분석하여 필요한 등반 구간을 자동으로 찾아주는 모바일 앱입니다.
-      </p>
-    </section>
+    <div data-language="ko" lang="ko">
+      <header>
+        <h1>TopOut 고객지원</h1>
+        <p>등반 시작부터 완등 순간까지, 자동으로 찾아주는 클라이밍 촬영 앱</p>
+      </header>
 
-    <section>
-      <h2>앱 다운로드</h2>
-      <p>
-        <a href="https://apps.apple.com/kr/app/topout/id6790163178" target="_blank" rel="noopener noreferrer">App Store</a>
-        ·
-        <a href="https://play.google.com/store/apps/details?id=com.topout.cam" target="_blank" rel="noopener noreferrer">Google Play</a>
-      </p>
-    </section>
+      <section>
+        <h2>TopOut 소개</h2>
+        <p>
+          TopOut은 실내 클라이밍 영상을 촬영하고 사용자의 움직임과 자세를
+          기기 안에서 분석해 필요한 등반 구간을 자동으로 찾아주는 앱입니다.
+          한 번의 촬영에 여러 시도가 담겨 있어도 각각의 구간을 나누어 확인하고 편집할 수 있습니다.
+        </p>
+      </section>
 
-    <section>
-      <h2>자주 묻는 질문</h2>
+      <section>
+        <h2>앱 다운로드</h2>
+        <p>
+          <a href="https://apps.apple.com/app/id6790163178" target="_blank" rel="noopener noreferrer">App Store</a>
+          ·
+          <a href="https://play.google.com/store/apps/details?id=com.topout.cam" target="_blank" rel="noopener noreferrer">Google Play</a>
+        </p>
+      </section>
 
-      <h3>앱 언어를 바꾸고 싶어요.</h3>
-      <p>
-        TopOut 설정의 언어 메뉴에서 영어, 한국어, 일본어, 중국어 간체·번체,
-        프랑스어, 독일어, 스페인어, 포르투갈어를 직접 선택할 수 있습니다.
-        언어를 고르면 설정 화면이 즉시 해당 언어로 미리보기되고, 저장하면 앱 전체에 적용됩니다.
-        기본값인 자동은 기기의 선호 언어를 따르며, 지원하지 않는 언어에서는 영어로 표시됩니다.
-      </p>
+      <section>
+        <h2>자주 묻는 질문</h2>
 
-      <h3>카메라 화면이 표시되지 않아요.</h3>
-      <p>
-        기기 설정에서 TopOut의 카메라 및 마이크 접근 권한이 허용되어 있는지
-        확인해 주세요.
-      </p>
+        <h3>앱 언어를 바꾸고 싶어요.</h3>
+        <p>
+          설정의 언어 메뉴에서 영어, 한국어, 일본어, 중국어 간체·번체,
+          프랑스어, 독일어, 스페인어, 포르투갈어를 선택할 수 있습니다.
+          기본값인 자동은 기기의 선호 언어를 따르며 지원하지 않는 언어에서는 영어를 사용합니다.
+        </p>
 
-      <h3>등반 구간이 정확하게 감지되지 않아요.</h3>
-      <p>
-        스마트폰을 고정하고, 클라이머의 전신과 벽·매트 경계가 화면에 함께
-        보이도록 촬영해 주세요. 매트 경계선과 완등 홀드가 올바르게
-        지정되었는지도 확인해 주세요.
-      </p>
+        <h3>카메라 화면이 표시되지 않아요.</h3>
+        <p>
+          기기 설정에서 TopOut의 카메라와 마이크 권한이 허용되어 있는지 확인해 주세요.
+          다른 앱이 카메라나 마이크를 사용하고 있다면 해당 앱을 종료한 뒤 TopOut을 다시 실행해 주세요.
+        </p>
 
-      <h3>매트 경계 분석이 오래 걸려요.</h3>
-      <p>
-        기기 내 분석이 5초 안에 끝나지 않으면 기본 매트 경계가 표시됩니다.
-        표시된 경계를 벽과 매트가 만나는 위치로 직접 보정한 뒤 촬영을 계속할 수 있습니다.
-      </p>
+        <h3>등반 구간이 정확하게 감지되지 않아요.</h3>
+        <p>
+          스마트폰을 고정하고 클라이머의 전신과 벽·매트 경계가 화면에 함께 보이도록 촬영해 주세요.
+          준비 화면에서 매트 경계가 실제 위치와 맞는지도 확인하고 필요한 경우 직접 보정해 주세요.
+        </p>
 
-      <h3>영상이 사진 앱에 저장되지 않아요.</h3>
-      <p>
-        기기 설정에서 TopOut의 사진 추가 권한이 허용되어 있는지 확인하고,
-        기기의 남은 저장 공간도 확인해 주세요.
-      </p>
+        <h3>매트 경계 분석이 오래 걸려요.</h3>
+        <p>
+          기기 내 분석이 5초 안에 끝나지 않으면 기본 매트 경계가 표시됩니다.
+          표시된 경계를 벽과 매트가 만나는 위치로 직접 보정한 뒤 촬영을 계속할 수 있습니다.
+        </p>
 
-      <h3>Android에서 줌할 때 화면이 잠시 멈춰 보여요.</h3>
-      <p>
-        기기에서 물리 카메라 전환이 필요한 경우 이전 화면을 잠시 유지한 뒤 새
-        카메라 화면으로 연결합니다. 검은 화면이 계속되거나 카메라가 복구되지
-        않으면 기기 모델과 Android 버전을 함께 알려 주세요.
-      </p>
+        <h3>영상이 사진 앱이나 갤러리에 저장되지 않아요.</h3>
+        <p>
+          기기 설정에서 TopOut의 사진 또는 미디어 저장 권한을 확인하고 기기의 남은 저장 공간도 확인해 주세요.
+        </p>
 
-      <h3>촬영 영상이 서버로 전송되나요?</h3>
-      <p>
-        TopOut의 영상 및 자세 분석은 기기 내에서 처리되며, 촬영 영상은
-        개발자 서버로 전송되지 않습니다.
-      </p>
-    </section>
+        <h3>Android에서 줌할 때 화면이 잠시 멈춰 보여요.</h3>
+        <p>
+          기기에서 물리 카메라 전환이 필요하면 이전 화면을 잠시 유지한 뒤 새 카메라 화면으로 연결합니다.
+          검은 화면이 계속되거나 카메라가 복구되지 않으면 기기 모델과 Android 버전을 함께 알려 주세요.
+        </p>
 
-    <section>
-      <h2>문의하기</h2>
-      <p>
-        오류 제보나 기능 제안이 있다면 아래 방법으로 문의해 주세요.
-      </p>
+        <h3>촬영 영상이 서버로 전송되나요?</h3>
+        <p>
+          아닙니다. 영상, 움직임, 자세와 매트 경계 분석은 기기 안에서 처리되며
+          촬영 영상과 분석용 이미지 프레임은 TopOut 개발자 서버로 전송되지 않습니다.
+        </p>
+      </section>
 
-      <ul>
-        <li>
-          이메일:
-          <a href="mailto:byeonghyeon383@gmail.com">
-            byeonghyeon383@gmail.com
+      <section>
+        <h2>문의하기</h2>
+        <p>오류 제보나 기능 제안이 있다면 아래 방법으로 문의해 주세요.</p>
+        <ul>
+          <li>이메일: <a href="mailto:byeonghyeon383@gmail.com">byeonghyeon383@gmail.com</a></li>
+          <li>
+            <a href="https://github.com/BIYONGHIYON/TopOut-app/issues" target="_blank" rel="noopener noreferrer">
+              GitHub Issues
+            </a>
+          </li>
+        </ul>
+        <p>
+          문의 시 기기 모델, iOS 또는 Android 버전, TopOut 버전, 문제 발생 과정과
+          화면 캡처를 함께 보내주시면 확인에 도움이 됩니다.
+        </p>
+        <p>
+          <a href="https://topoutprivacy.vercel.app/?lang=ko" target="_blank" rel="noopener noreferrer">
+            TopOut 개인정보 처리방침
           </a>
-        </li>
-        <li>
-          GitHub Issues:
-          <a
-            href="https://github.com/BIYONGHIYON/TopOut-app/issues"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            오류 및 기능 제안 등록
-          </a>
-        </li>
-      </ul>
-
-      <p>
-        <a href="https://topoutprivacy.vercel.app/" target="_blank" rel="noopener noreferrer">
-          TopOut 개인정보 처리방침
+        </p>
+        <a class="button" href="https://github.com/BIYONGHIYON/TopOut-app/issues/new" target="_blank" rel="noopener noreferrer">
+          문제 신고하기
         </a>
-      </p>
+      </section>
+    </div>
 
-      <p>
-        문의 시 기기 모델, iOS 또는 Android 버전, 문제 발생 과정과
-        화면 캡처를 함께 보내주시면 확인에 도움이 됩니다.
-      </p>
+    <div data-language="en" lang="en" hidden>
+      <header>
+        <h1>TopOut Support</h1>
+        <p>From the start of your climb to the send—automatically.</p>
+      </header>
 
-      <a
-        class="button"
-        href="https://github.com/BIYONGHIYON/TopOut-app/issues/new"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        문제 신고하기
-      </a>
-    </section>
+      <section>
+        <h2>About TopOut</h2>
+        <p>
+          TopOut records indoor climbing videos and analyzes movement and pose on your device
+          to find the useful part of each attempt automatically. If one recording contains multiple attempts,
+          you can review and edit each clip separately.
+        </p>
+      </section>
 
-    <footer>
-      © 2026 TopOut. All rights reserved.
-    </footer>
+      <section>
+        <h2>Download the App</h2>
+        <p>
+          <a href="https://apps.apple.com/app/id6790163178" target="_blank" rel="noopener noreferrer">App Store</a>
+          ·
+          <a href="https://play.google.com/store/apps/details?id=com.topout.cam" target="_blank" rel="noopener noreferrer">Google Play</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>How do I change the app language?</h3>
+        <p>
+          Open the Language menu in Settings and choose English, Korean, Japanese,
+          Simplified Chinese, Traditional Chinese, French, German, Spanish, or Portuguese.
+          The default Automatic option follows your device’s preferred language and falls back to English when needed.
+        </p>
+
+        <h3>The camera preview does not appear.</h3>
+        <p>
+          Check that TopOut has camera and microphone permission in your device settings.
+          If another app is using the camera or microphone, close it and reopen TopOut.
+        </p>
+
+        <h3>The detected climbing clip is inaccurate.</h3>
+        <p>
+          Keep your phone stable and frame the climber’s full body together with the wall and mat boundary.
+          Confirm the detected mat boundary on the preparation screen and correct it manually when needed.
+        </p>
+
+        <h3>Mat boundary analysis is taking too long.</h3>
+        <p>
+          If on-device analysis does not finish within five seconds, TopOut displays a default boundary.
+          Move it to the point where the wall meets the mat, then continue recording.
+        </p>
+
+        <h3>The video was not saved to Photos or my gallery.</h3>
+        <p>
+          Check TopOut’s Photos or media-storage permission in device settings and make sure your device has enough free storage.
+        </p>
+
+        <h3>The Android preview pauses briefly while zooming.</h3>
+        <p>
+          Some devices require a physical camera switch. TopOut briefly holds the previous frame while connecting the next camera.
+          If the screen stays black or the camera does not recover, send us your device model and Android version.
+        </p>
+
+        <h3>Are my recordings uploaded to a server?</h3>
+        <p>
+          No. Video, movement, pose, and mat boundary analysis run on your device.
+          Recordings and analysis frames are not sent to a TopOut developer server.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact Support</h2>
+        <p>Use one of the following options to report a problem or suggest a feature.</p>
+        <ul>
+          <li>Email: <a href="mailto:byeonghyeon383@gmail.com">byeonghyeon383@gmail.com</a></li>
+          <li>
+            <a href="https://github.com/BIYONGHIYON/TopOut-app/issues" target="_blank" rel="noopener noreferrer">
+              GitHub Issues
+            </a>
+          </li>
+        </ul>
+        <p>
+          Please include your device model, iOS or Android version, TopOut version,
+          reproduction steps, and a screenshot when possible.
+        </p>
+        <p>
+          <a href="https://topoutprivacy.vercel.app/?lang=en" target="_blank" rel="noopener noreferrer">
+            TopOut Privacy Policy
+          </a>
+        </p>
+        <a class="button" href="https://github.com/BIYONGHIYON/TopOut-app/issues/new" target="_blank" rel="noopener noreferrer">
+          Report a Problem
+        </a>
+      </section>
+    </div>
+
+    <footer>© 2026 TopOut. All rights reserved.</footer>
   </main>
+
+  <script>
+    (() => {
+      const supportedLanguages = new Set(["ko", "en"]);
+      const pages = document.querySelectorAll("[data-language]");
+      const buttons = document.querySelectorAll("[data-language-button]");
+      const description = document.querySelector('meta[name="description"]');
+      const metadata = {
+        ko: {
+          title: "TopOut 고객지원",
+          description: "TopOut 고객지원 및 문의 페이지입니다."
+        },
+        en: {
+          title: "TopOut Support",
+          description: "Support and contact information for the TopOut climbing video app."
+        }
+      };
+
+      const queryLanguage = new URLSearchParams(window.location.search).get("lang");
+      const savedLanguage = (() => {
+        try {
+          return window.localStorage.getItem("topout.support.language");
+        } catch {
+          return null;
+        }
+      })();
+      const browserLanguage = navigator.language.toLowerCase().startsWith("ko") ? "ko" : "en";
+      const initialLanguage = supportedLanguages.has(queryLanguage)
+        ? queryLanguage
+        : supportedLanguages.has(savedLanguage)
+          ? savedLanguage
+          : browserLanguage;
+
+      function setLanguage(language, shouldSave) {
+        const selected = supportedLanguages.has(language) ? language : "en";
+        document.documentElement.lang = selected;
+        document.title = metadata[selected].title;
+        description.setAttribute("content", metadata[selected].description);
+
+        pages.forEach((page) => {
+          page.hidden = page.dataset.language !== selected;
+        });
+        buttons.forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.languageButton === selected));
+        });
+
+        if (shouldSave) {
+          try {
+            window.localStorage.setItem("topout.support.language", selected);
+          } catch {
+            // 저장소가 차단돼도 현재 페이지의 언어 전환은 유지한다.
+          }
+        }
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          setLanguage(button.dataset.languageButton, true);
+        });
+      });
+
+      setLanguage(initialLanguage, false);
+    })();
+  </script>
 </body>
 </html>
