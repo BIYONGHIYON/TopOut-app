@@ -4,7 +4,7 @@
 # TopOut
 
 **등반 시작부터 완등 순간까지, 자동으로 찾아주는 클라이밍 촬영 앱**<br>
-**From the start of your climb to the send—automatically.**
+**From the First Move to the TopOut**
 
 `iOS 출시 완료 · Available on iOS` · `Android 출시 완료 · Available on Android`
 
@@ -276,5 +276,5 @@ This repository contains TopOut’s public product introduction, support informa
 <div align="center">
   <strong>TopOut</strong><br />
   등반 시작부터 완등 순간까지, 자동으로 찾아주는 클라이밍 촬영 앱<br />
-  From the start of your climb to the send—automatically.
+  From the First Move to the TopOut
 </div>
