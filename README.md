@@ -8,7 +8,7 @@
 
 `iOS 출시 완료 · Available on iOS` · `Android 출시 완료 · Available on Android`
 
-<sub>iOS 2.0 build 16 · Android 2.0 versionCode 16</sub>
+<sub>iOS 2.1 build 18 · Android 2.1 versionCode 18</sub>
 
 [App Store](https://apps.apple.com/app/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
 
@@ -57,7 +57,7 @@ TopOut 2.0부터 다음 언어를 지원합니다.
 
 기본값인 `자동`은 기기의 선호 언어를 따르며, 지원하지 않는 언어에서는 영어를 사용합니다. 설정에서 원하는 언어를 직접 선택할 수도 있습니다.
 
-긴 번역도 버튼 밖으로 나가거나 말줄임표로 숨지 않도록 화면을 조정했습니다. Android 촬영 화면의 Tip은 화면 너비에 맞춰 글자 크기를 조절해 한 줄로 표시하며, 촬영·선택·결과 화면의 긴 상태 문구는 필요한 경우 최대 두 줄로 표시합니다.
+긴 번역도 버튼 밖으로 나가거나 말줄임표로 숨지 않도록 화면을 조정했습니다. 촬영·선택·결과 안내와 Tip은 화면 너비에 맞춰 한 줄로 표시하면서도, 벽과 매트 사이의 경계와 사용자가 해야 할 조작을 구체적으로 안내합니다.
 
 ### 사용 흐름
 
@@ -95,14 +95,14 @@ TopOut 2.0부터 다음 언어를 지원합니다.
 - iOS 16.0 이상
 - Swift · UIKit · AVFoundation
 - Apple Vision · Core ML MobileSAM
-- 현재 버전: 2.0 build 16
+- 현재 버전: 2.1 build 18
 
 #### Android
 
 - Android 8.0(API 26) 이상
 - Kotlin · Jetpack Compose · CameraX
 - MoveNet Thunder · LiteRT · ONNX Runtime MobileSAM
-- 현재 버전: 2.0 versionCode 16
+- 현재 버전: 2.1 versionCode 18
 
 기기별 카메라 하드웨어, 지원 포맷, 촬영 환경과 자세 인식 결과에 따라 자동 감지 정확도에는 차이가 있을 수 있습니다.
 
@@ -124,6 +124,11 @@ TopOut 2.0부터 다음 언어를 지원합니다.
 - [GitHub Issues](https://github.com/BIYONGHIYON/TopOut-app/issues)
 - 이메일: [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
 
+### TopOut 2.1
+
+- 벽과 매트 사이 경계, 파란 점 조작, 시작~완등 구간 안내를 9개 언어에서 더 구체적으로 개선
+- 작은 화면에서도 촬영·선택·결과 안내와 Tip이 한 줄로 보이도록 자동 축소 유지
+
 ### TopOut 2.0
 
 - 앱 UI를 9개 언어로 제공하고 자동·수동 언어 선택 지원
@@ -136,6 +141,7 @@ TopOut 2.0부터 다음 언어를 지원합니다.
 - 화면 가장자리의 잘린 자세를 새 등반으로 잘못 인식하는 경우 완화
 - Android 멀티 렌즈 줌과 다양한 카메라 구성 대응 강화
 - iOS·Android의 긴 다국어 문구와 가로·세로 UI 대응 보강
+- 벽·매트 경계 보정과 결과 구간 안내를 9개 언어에서 더 구체적으로 개선
 
 ### 저장소 안내
 
@@ -185,7 +191,7 @@ Starting with TopOut 2.0, the app supports:
 
 The default `Automatic` option follows your device’s preferred language and falls back to English when the language is not supported. You can also choose a language manually in Settings.
 
-Layouts are designed so longer translations remain visible instead of overflowing or being replaced with ellipses. On Android, the camera Tip scales to remain on one line. Longer status messages on the camera, selection, and review screens can use up to two lines when needed.
+Layouts keep longer translations visible instead of overflowing or being replaced with ellipses. Camera, selection, review, and Tip guidance stays on one line while clearly identifying the wall–mat boundary and the action the user should take.
 
 ### How It Works
 
@@ -223,14 +229,14 @@ Potential options include FHD or 4K, 30fps or 60fps, 9:16·4:5·3:4·1:1, and po
 - iOS 16.0 or later
 - Swift · UIKit · AVFoundation
 - Apple Vision · Core ML MobileSAM
-- Current version: 2.0 build 16
+- Current version: 2.1 build 18
 
 #### Android
 
 - Android 8.0(API 26) or later
 - Kotlin · Jetpack Compose · CameraX
 - MoveNet Thunder · LiteRT · ONNX Runtime MobileSAM
-- Current version: 2.0 versionCode 16
+- Current version: 2.1 versionCode 18
 
 Detection accuracy may vary with camera hardware, supported formats, filming conditions, and pose-estimation results.
 
@@ -252,6 +258,11 @@ When reporting a problem, please include your device model, operating-system ver
 - [GitHub Issues](https://github.com/BIYONGHIYON/TopOut-app/issues)
 - Email: [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
 
+### TopOut 2.1
+
+- Clarified wall–mat boundary, blue-point adjustment, and start-to-finish review guidance in all nine languages
+- Kept camera, selection, review, and Tip guidance on one line with automatic text scaling on small screens
+
 ### TopOut 2.0
 
 - Added a 9-language interface with automatic and manual language selection
@@ -264,6 +275,7 @@ When reporting a problem, please include your device model, operating-system ver
 - Reduced false climb starts caused by partial poses near screen edges
 - Improved Android multi-lens zoom and support for varied camera configurations
 - Improved long translated labels and portrait·landscape layouts on both platforms
+- Clarified wall–mat boundary correction and review guidance in all nine languages
 
 ### Repository
 
