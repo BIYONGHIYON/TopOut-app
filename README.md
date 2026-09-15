@@ -8,7 +8,7 @@
 
 `iOS 출시 완료 · Available on iOS` · `Android 출시 완료 · Available on Android`
 
-<sub>iOS 2.1 build 18 · Android 2.1 versionCode 18</sub>
+<sub>iOS 2.2 build 19 · Android 2.2 versionCode 19</sub>
 
 [App Store](https://apps.apple.com/app/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
 
@@ -35,11 +35,15 @@
 - 움직임과 자세를 분석해 등반 시작·종료 시점 감지
 - 한 번의 촬영에서 여러 등반 시도 자동 구분
 - 자동으로 찾은 구간의 시작점·종료점 정밀 조정
-- 타임라인 확대와 수정 구간 자동 미리보기
+- 자동 구간 편집 여백: iOS 앞뒤 3초, Android 시작 전 5초·종료 후 3초 (원본 영상 범위 내)
+- 최대 30배 타임라인 확대와 수정 구간 자동 미리보기
 - 원하는 등반 장면만 사진 앱 또는 갤러리에 저장
 - 저장된 실제 영상을 TopOut 안에서 다시 열어 확인
+- iOS 저장본 조회는 최대 20초 안에 확인하고, 확인 실패 시 결과 화면에서 다시 조작 가능
 - 녹화 중단과 저장공간 부족 상황에 안전하게 대응
 - 장시간 촬영을 위한 실시간 화면 끄기
+- 자동 탐지 준비 또는 탑홀드 선택 완료 후 1분간 조작이 없으면 녹화 카운트다운 자동 시작
+- 1분 대기 중 기존 선택 안내를 유지하고 자동 시작 직전 5초 동안만 상단 안내 표시
 
 ### 9개 언어 지원
 
@@ -66,7 +70,7 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 ```text
 촬영 옵션과 구도 설정
 → 매트 경계 자동 탐지 및 직접 보정
-→ 연속 녹화 시작
+→ 직접 녹화 시작 또는 준비 상태 1분 후 자동 시작
 → 기기 내 움직임·자세 분석
 → 여러 등반 구간 자동 제안
 → 시작점·종료점 정밀 조정
@@ -97,14 +101,14 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 - iOS 16.0 이상
 - Swift · UIKit · AVFoundation
 - Apple Vision · Core ML MobileSAM
-- 현재 버전: 2.1 build 18
+- 현재 버전: 2.2 build 19
 
 #### Android
 
 - Android 8.0(API 26) 이상
 - Kotlin · Jetpack Compose · CameraX
 - MoveNet Thunder · LiteRT · ONNX Runtime MobileSAM
-- 현재 버전: 2.1 versionCode 18
+- 현재 버전: 2.2 versionCode 19
 
 기기별 카메라 하드웨어, 지원 포맷, 촬영 환경과 자세 인식 결과에 따라 자동 감지 정확도에는 차이가 있을 수 있습니다.
 
@@ -125,6 +129,14 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 - [TopOut 고객지원](https://biyonghiyon.github.io/TopOut-app/?lang=ko)
 - [GitHub Issues](https://github.com/BIYONGHIYON/TopOut-app/issues)
 - 이메일: [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
+
+### TopOut 2.2
+
+- 자동 탐지 준비 또는 탑홀드 선택 완료 후 1분 동안 녹화 시작을 누르지 않으면 자동으로 카운트다운 시작
+- 조각난 매트 영역도 같은 상단 직선으로 이어지면 함께 분석하고 위·아래로 튀는 부분을 제외해 경계 탐지 안정성 개선
+- 카메라·분석·녹화·저장·리뷰의 취소와 리소스 정리 경로 개선
+- Android 자동 감지 구간의 편집 여백을 시작 전 5초·종료 후 3초로 조정
+- iOS·Android 선택 구간 타임라인의 확대 상한을 30배로 확장
 
 ### TopOut 2.1
 
@@ -171,11 +183,14 @@ After recording, review the suggested clips, fine-tune their start and end point
 - On-device movement and pose analysis for climb start and end detection
 - Automatic separation of multiple attempts in one recording
 - Precise start and end point adjustment
-- Timeline zoom and automatic preview after trim changes
+- Automatic clip padding: 3 seconds on each side on iOS; 5 seconds before and 3 seconds after on Android, within the source video bounds
+- On iOS, saved-video lookup is limited to 20 seconds; review controls recover if verification fails
+- Up to 30× timeline zoom and automatic preview after trim changes
 - Save only selected climbing clips to Photos or your gallery
 - Open the actual saved video again inside TopOut
 - Safe recording finalization during interruptions or low-storage conditions
 - Optional live-preview shutdown for long recording sessions
+- Automatic recording countdown when Start Recording is not tapped for one minute after detection setup is ready
 
 ### Available in 9 Languages
 
@@ -200,7 +215,7 @@ Layouts keep longer translations visible instead of overflowing or being replace
 ```text
 Choose recording options and frame your wall
 → Detect or manually correct the mat boundary
-→ Start continuous recording
+→ Start recording manually, or automatically after one ready minute
 → Analyze movement and pose on the device
 → Suggest clips for multiple climbing attempts
 → Fine-tune each start and end point
@@ -231,14 +246,14 @@ Potential options include FHD or 4K, 30fps or 60fps, 9:16·4:5·3:4·1:1, and po
 - iOS 16.0 or later
 - Swift · UIKit · AVFoundation
 - Apple Vision · Core ML MobileSAM
-- Current version: 2.1 build 18
+- Current version: 2.2 build 19
 
 #### Android
 
 - Android 8.0(API 26) or later
 - Kotlin · Jetpack Compose · CameraX
 - MoveNet Thunder · LiteRT · ONNX Runtime MobileSAM
-- Current version: 2.1 versionCode 18
+- Current version: 2.2 versionCode 19
 
 Detection accuracy may vary with camera hardware, supported formats, filming conditions, and pose-estimation results.
 
@@ -259,6 +274,15 @@ When reporting a problem, please include your device model, operating-system ver
 - [TopOut Support](https://biyonghiyon.github.io/TopOut-app/?lang=en)
 - [GitHub Issues](https://github.com/BIYONGHIYON/TopOut-app/issues)
 - Email: [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
+
+### TopOut 2.2
+
+- Starts the recording countdown automatically when Start Recording is not tapped for one minute after setup is ready
+- Keeps the normal selection guidance during the wait and shows an automatic-start notice only for the final five seconds
+- Improved mat-boundary stability by combining disconnected regions that support the same upper line while excluding vertical outliers
+- Improved cancellation and resource cleanup across camera, analysis, recording, saving, and review flows
+- Changed Android automatic clip padding to five seconds before and three seconds after each detected attempt
+- Increased selected-range timeline zoom to a maximum of 30× on iOS and Android
 
 ### TopOut 2.1
 
