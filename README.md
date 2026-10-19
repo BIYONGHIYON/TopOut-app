@@ -8,7 +8,7 @@
 
 `iOS 출시 완료 · Available on iOS` · `Android 출시 완료 · Available on Android`
 
-<sub>iOS 2.3 build 20 · Android 2.3 versionCode 20</sub>
+<sub>iOS 2.3 build 21 · Android 2.3 versionCode 21</sub>
 
 [App Store](https://apps.apple.com/app/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
 
@@ -101,14 +101,14 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 - iOS 16.0 이상
 - Swift · UIKit · AVFoundation
 - Apple Vision · Core ML MobileSAM
-- 현재 버전: 2.3 build 20
+- 현재 버전: 2.3 build 21
 
 #### Android
 
 - Android 8.0(API 26) 이상
 - Kotlin · Jetpack Compose · CameraX
 - MoveNet Thunder · LiteRT · ONNX Runtime MobileSAM
-- 현재 버전: 2.3 versionCode 20
+- 현재 버전: 2.3 versionCode 21
 
 기기별 카메라 하드웨어, 지원 포맷, 촬영 환경과 자세 인식 결과에 따라 자동 감지 정확도에는 차이가 있을 수 있습니다.
 
@@ -253,14 +253,14 @@ Potential options include FHD or 4K, 30fps or 60fps, 9:16·4:5·3:4·1:1, and po
 - iOS 16.0 or later
 - Swift · UIKit · AVFoundation
 - Apple Vision · Core ML MobileSAM
-- Current version: 2.3 build 20
+- Current version: 2.3 build 21
 
 #### Android
 
 - Android 8.0(API 26) or later
 - Kotlin · Jetpack Compose · CameraX
 - MoveNet Thunder · LiteRT · ONNX Runtime MobileSAM
-- Current version: 2.3 versionCode 20
+- Current version: 2.3 versionCode 21
 
 Detection accuracy may vary with camera hardware, supported formats, filming conditions, and pose-estimation results.
 
