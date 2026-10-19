@@ -8,7 +8,7 @@
 
 `iOS 출시 완료 · Available on iOS` · `Android 출시 완료 · Available on Android`
 
-<sub>iOS 2.2 build 19 · Android 2.2 versionCode 19</sub>
+<sub>iOS 2.3 build 20 · Android 2.2 versionCode 19</sub>
 
 [App Store](https://apps.apple.com/app/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
 
@@ -101,7 +101,7 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 - iOS 16.0 이상
 - Swift · UIKit · AVFoundation
 - Apple Vision · Core ML MobileSAM
-- 현재 버전: 2.2 build 19
+- 현재 버전: 2.3 build 20
 
 #### Android
 
@@ -129,6 +129,12 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 - [TopOut 고객지원](https://biyonghiyon.github.io/TopOut-app/?lang=ko)
 - [GitHub Issues](https://github.com/BIYONGHIYON/TopOut-app/issues)
 - 이메일: [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
+
+### TopOut 2.3 (iOS)
+
+- 촬영 시작·녹화 종료·결과 재생 전환 때 오디오 설정으로 화면이 잠시 멈출 수 있던 문제 개선
+- 통화 등으로 마이크나 소리를 쓸 수 없을 때도 영상 촬영과 결과 재생은 계속 진행
+- 앱이 촬영 중 강제 종료되며 남긴 임시 영상을 다음 실행 때 자동으로 정리해 저장공간 확보
 
 ### TopOut 2.2
 
@@ -246,7 +252,7 @@ Potential options include FHD or 4K, 30fps or 60fps, 9:16·4:5·3:4·1:1, and po
 - iOS 16.0 or later
 - Swift · UIKit · AVFoundation
 - Apple Vision · Core ML MobileSAM
-- Current version: 2.2 build 19
+- Current version: 2.3 build 20
 
 #### Android
 
@@ -274,6 +280,12 @@ When reporting a problem, please include your device model, operating-system ver
 - [TopOut Support](https://biyonghiyon.github.io/TopOut-app/?lang=en)
 - [GitHub Issues](https://github.com/BIYONGHIYON/TopOut-app/issues)
 - Email: [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
+
+### TopOut 2.3 (iOS)
+
+- Prevents brief UI freezes caused by audio setup when the camera starts, recording ends, or review playback begins
+- Keeps recording video and playing review clips when the microphone or audio output is in use by a call
+- Automatically removes temporary videos left by a forced quit during recording on the next launch to free storage
 
 ### TopOut 2.2
 
