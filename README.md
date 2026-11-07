@@ -8,7 +8,7 @@
 
 `iOS 출시 완료 · Available on iOS` · `Android 출시 완료 · Available on Android`
 
-<sub>iOS 2.3 build 21 · Android 2.3 versionCode 21</sub>
+<sub>iOS 3.0 build 23 · Android 3.0 versionCode 23</sub>
 
 [App Store](https://apps.apple.com/app/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
 
@@ -42,8 +42,7 @@
 - iOS 저장본 조회는 최대 20초 안에 확인하고, 확인 실패 시 결과 화면에서 다시 조작 가능
 - 녹화 중단과 저장공간 부족 상황에 안전하게 대응
 - 장시간 촬영을 위한 실시간 화면 끄기
-- 자동 탐지 준비 또는 탑홀드 선택 완료 후 1분간 조작이 없으면 녹화 카운트다운 자동 시작
-- 1분 대기 중 기존 선택 안내를 유지하고 자동 시작 직전 5초 동안만 상단 안내 표시
+- 탑홀드 마스크는 결과 화면에서 영상을 멈추고, 확대한 뒤 탑홀드를 탭해 원하는 장면 기준으로 지정
 
 ### 9개 언어 지원
 
@@ -70,7 +69,7 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 ```text
 촬영 옵션과 구도 설정
 → 매트 경계 자동 탐지 및 직접 보정
-→ 직접 녹화 시작 또는 준비 상태 1분 후 자동 시작
+→ 빨간 녹화 버튼으로 녹화 시작
 → 기기 내 움직임·자세 분석
 → 여러 등반 구간 자동 제안
 → 시작점·종료점 정밀 조정
@@ -101,14 +100,14 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 - iOS 16.0 이상
 - Swift · UIKit · AVFoundation
 - Apple Vision · Core ML MobileSAM
-- 현재 버전: 2.3 build 21
+- 현재 버전: 3.0 build 23
 
 #### Android
 
 - Android 8.0(API 26) 이상
 - Kotlin · Jetpack Compose · CameraX
 - MoveNet Thunder · LiteRT · ONNX Runtime MobileSAM
-- 현재 버전: 2.3 versionCode 21
+- 현재 버전: 3.0 versionCode 23
 
 기기별 카메라 하드웨어, 지원 포맷, 촬영 환경과 자세 인식 결과에 따라 자동 감지 정확도에는 차이가 있을 수 있습니다.
 
@@ -129,6 +128,16 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 - [TopOut 고객지원](https://biyonghiyon.github.io/TopOut-app/?lang=ko)
 - [GitHub Issues](https://github.com/BIYONGHIYON/TopOut-app/issues)
 - 이메일: [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
+
+### TopOut 3.0
+
+- 녹화 시작 버튼을 녹화 종료 버튼과 같은 빨간 버튼으로 변경
+- 탑홀드는 녹화 전에 고르지 않고, 결과 화면에서 영상을 멈추고 탭해 지정. 두 손가락으로 확대한 뒤 고를 수 있음
+- 탑홀드 테두리를 홀드 모양에 맞춰 더 깔끔하게 표시하고, 작은 홀드는 작은 원으로 표시
+- 실시간 화면을 켠 녹화 중에도 매트 경계선을 직접 보정
+- 결과 화면의 다시 촬영을 없애고 5초 뒤로·재생·5초 앞으로·저장 / 탑홀드 마스크·닫기로 버튼 재배치
+- 매트 경계 확정 1분 뒤 녹화를 자동으로 시작하던 기능 제거
+- Android: 사람이 없는 벽에서 홀드를 사람으로 잘못 인식하는 경우를 줄임
 
 ### TopOut 2.3
 
@@ -197,7 +206,7 @@ After recording, review the suggested clips, fine-tune their start and end point
 - Open the actual saved video again inside TopOut
 - Safe recording finalization during interruptions or low-storage conditions
 - Optional live-preview shutdown for long recording sessions
-- Automatic recording countdown when Start Recording is not tapped for one minute after detection setup is ready
+- Set the top-hold mask in review: pause, zoom in, and tap the finish hold in the frame you want
 
 ### Available in 9 Languages
 
@@ -222,7 +231,7 @@ Layouts keep longer translations visible instead of overflowing or being replace
 ```text
 Choose recording options and frame your wall
 → Detect or manually correct the mat boundary
-→ Start recording manually, or automatically after one ready minute
+→ Start recording with the red record button
 → Analyze movement and pose on the device
 → Suggest clips for multiple climbing attempts
 → Fine-tune each start and end point
@@ -253,14 +262,14 @@ Potential options include FHD or 4K, 30fps or 60fps, 9:16·4:5·3:4·1:1, and po
 - iOS 16.0 or later
 - Swift · UIKit · AVFoundation
 - Apple Vision · Core ML MobileSAM
-- Current version: 2.3 build 21
+- Current version: 3.0 build 23
 
 #### Android
 
 - Android 8.0(API 26) or later
 - Kotlin · Jetpack Compose · CameraX
 - MoveNet Thunder · LiteRT · ONNX Runtime MobileSAM
-- Current version: 2.3 versionCode 21
+- Current version: 3.0 versionCode 23
 
 Detection accuracy may vary with camera hardware, supported formats, filming conditions, and pose-estimation results.
 
@@ -281,6 +290,16 @@ When reporting a problem, please include your device model, operating-system ver
 - [TopOut Support](https://biyonghiyon.github.io/TopOut-app/?lang=en)
 - [GitHub Issues](https://github.com/BIYONGHIYON/TopOut-app/issues)
 - Email: [byeonghyeon383@gmail.com](mailto:byeonghyeon383@gmail.com)
+
+### TopOut 3.0
+
+- The start-recording button is now red, matching the stop button
+- The finish hold is no longer picked before recording; pause the video in review and tap it, zooming in with two fingers if needed
+- Finish-hold outlines follow the hold shape more cleanly, and small holds are marked with a small circle
+- Correct the mat boundary during recording while live preview is on
+- Review drops Retake and rearranges buttons into back 5s · play · forward 5s · save / top-hold mask · close
+- Removed the automatic recording start one minute after the mat boundary is ready
+- Android: fewer false detections of holds as a person on an empty wall
 
 ### TopOut 2.3
 
