@@ -136,7 +136,7 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 - 탑홀드 테두리를 홀드 모양에 맞춰 더 깔끔하게 표시하고, 작은 홀드는 작은 원으로 표시
 - 실시간 화면을 켠 녹화 중에도 매트 경계선을 직접 보정
 - 결과 화면의 다시 촬영을 없애고 5초 뒤로·재생·5초 앞으로·저장 / 탑홀드 마스크·닫기로 버튼 재배치
-- 매트 경계 확정 1분 뒤 녹화를 자동으로 시작하던 기능 제거
+- 자동 구간 탐지를 켜고 준비 완료 후 매트 분석을 마치면 60초 뒤 현재 경계선으로 3초 녹화 카운트다운 시작. 마지막 5초에만 예고하며, 다시 촬영하거나 앱을 벗어나면 예약 취소
 - Android: 사람이 없는 벽에서 홀드를 사람으로 잘못 인식하는 경우를 줄임
 
 ### TopOut 2.3
@@ -298,7 +298,7 @@ When reporting a problem, please include your device model, operating-system ver
 - Finish-hold outlines follow the hold shape more cleanly, and small holds are marked with a small circle
 - Correct the mat boundary during recording while live preview is on
 - Review drops Retake and rearranges buttons into back 5s · play · forward 5s · save / top-hold mask · close
-- Removed the automatic recording start one minute after the mat boundary is ready
+- With automatic segment detection enabled, starts the 3-second recording countdown 60 seconds after mat analysis is ready, using the current corrected boundary. Shows a notice only for the final 5 seconds; retaking or leaving the app cancels the pending start
 - Android: fewer false detections of holds as a person on an empty wall
 
 ### TopOut 2.3
