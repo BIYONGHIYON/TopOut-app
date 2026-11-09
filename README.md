@@ -12,6 +12,9 @@
 
 [App Store](https://apps.apple.com/app/id6790163178) · [Google Play](https://play.google.com/store/apps/details?id=com.topout.cam)
 
+앱 소스 코드는 별도 저장소인 [TopOut](https://github.com/BIYONGHIYON/TopOut)에서 관리합니다.<br>
+Application source code is maintained in the separate [TopOut repository](https://github.com/BIYONGHIYON/TopOut).
+
 [한국어](#한국어) · [English](#english)
 </div>
 
