@@ -175,7 +175,7 @@ Android는 버튼 배치를 바꾸지 않고 내부 여백과 아이콘 간격, 
 
 ### 저장소 안내
 
-이 저장소는 TopOut의 공개 소개, 고객지원, 개인정보 처리방침과 업데이트 안내를 위한 저장소입니다. App Store 및 Google Play 배포용 앱 소스와 내부 탐지 파라미터는 별도의 비공개 저장소에서 관리합니다.
+이 저장소는 TopOut의 공개 소개, 고객지원, 개인정보 처리방침과 업데이트 안내를 위한 저장소입니다. 앱 소스 코드와 내부 탐지 파라미터는 별도 저장소인 [TopOut](https://github.com/BIYONGHIYON/TopOut)에서 관리합니다.
 
 [맨 위로](#topout)
 
@@ -338,7 +338,7 @@ When reporting a problem, please include your device model, operating-system ver
 
 ### Repository
 
-This repository contains TopOut’s public product introduction, support information, privacy policy, and release updates. The App Store and Google Play application source and internal detection parameters are maintained in a separate private repository.
+This repository contains TopOut’s public product introduction, support information, privacy policy, and release updates. The application source code and internal detection parameters are maintained separately in the [TopOut repository](https://github.com/BIYONGHIYON/TopOut).
 
 [Back to top](#topout)
 
